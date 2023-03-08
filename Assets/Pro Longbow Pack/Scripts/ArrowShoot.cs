@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class ArrowShoot : MonoBehaviour
 {
-    public float Range;
-    public GameObject Arrow;
-    public GameObject Cam;
+    public GameObject ArrowPrefab;
+    RaycastHit hit;
+    float range = 1000f;
+    public Transform ArrowSpawnPosition;
     
     void shoot()
     {
-        RaycastHit hit;
-        Physics.Raycast(Cam.transform.position, Cam.transform.forward, out hit, Range);
-        Instantiate(Arrow, hit.point, transform.rotation);
+       Vector2 ScreenCenter = new Vector2(Screen.width / 2f, Screen.height / 2f);
+       Ray ray = Camera.main.ScreenPointToRay(ScreenCenter);
+       if(Physics.Raycast(ray, out hit, range));
+       {
+            GameObject ArrowInstantiate = GameObject.Instantiate(ArrowPrefab, ArrowSpawnPosition.transform.position, ArrowSpawnPosition.transform.rotation) as GameObject;
+            ArrowInstantiate.GetComponent<Arrow>().setTarget(hit.point);
+       } 
+
     }
 }
     
