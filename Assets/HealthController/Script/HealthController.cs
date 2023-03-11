@@ -24,7 +24,7 @@ public class HealthController : MonoBehaviour
     [SerializeField]
     private float respawnTime;
 
-    private MeshRenderer meshRenderer;
+    private SkinnedMeshRenderer skinnedMeshRenderer;
 
     private bool isDead;
 
@@ -32,7 +32,7 @@ public class HealthController : MonoBehaviour
     void Start()
     {
         healthBarStartWidth = healthBar.sizeDelta.x;
-        meshRenderer = GetComponent<MeshRenderer>();
+        skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
         ResetHealth();
         UpdateHealthUI();
     }
@@ -47,7 +47,7 @@ public class HealthController : MonoBehaviour
         {
             currentHealth = 0;
             isDead = true;
-            meshRenderer.enabled = false;
+            skinnedMeshRenderer.enabled = false;
             healthPanel.SetActive(false);
             StartCoroutine(RespawnAfterTime());
         }
@@ -65,7 +65,7 @@ public class HealthController : MonoBehaviour
     {
         isDead = false;
         currentHealth = maxHealth;
-        meshRenderer.enabled = true;
+        skinnedMeshRenderer.enabled = true;
         healthPanel.SetActive(true);
         UpdateHealthUI();
     }

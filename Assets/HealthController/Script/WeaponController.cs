@@ -15,12 +15,12 @@ public class WeaponController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            fire = true;
+            fire = false;
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            fire = false;
+            fire = true;
         }
 
         if (fire)
