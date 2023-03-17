@@ -34,8 +34,8 @@ public class Weapon : MonoBehaviour
         {
             if (hit.collider.CompareTag(enemyTag))
             {
-                var healthCtrl = hit.collider.GetComponent<HealthController>();
-                healthCtrl.ApplyDamage(damage);
+                // var healthCtrl = hit.collider.GetComponent<HealthController>();
+                // healthCtrl.ApplyDamage(damage);
             }
         }
 

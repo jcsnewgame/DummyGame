@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17290433, g: 0.20734255, b: 0.24843267, a: 1}
+  m_IndirectSpecularColor: {r: 0.17290446, g: 0.20734291, b: 0.2484332, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2755,7 +2755,7 @@ GameObject:
   - component: {fileID: 1518651794}
   - component: {fileID: 1518651793}
   m_Layer: 0
-  m_Name: Zombie (1)
+  m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
