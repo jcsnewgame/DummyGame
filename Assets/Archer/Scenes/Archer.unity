@@ -1028,7 +1028,6 @@ GameObject:
   - component: {fileID: 623743723}
   - component: {fileID: 623743722}
   - component: {fileID: 623743725}
-  - component: {fileID: 623743726}
   - component: {fileID: 623743727}
   m_Layer: 0
   m_Name: Player
@@ -1107,20 +1106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ef869073bc40439690e49e62ed8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &623743726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623743721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 970cc775649dfd34e93f109cd1f14635, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 95329518522490251}
-  enemyTag: Enemy
 --- !u!114 &623743727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4105,7 +4090,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4620178592403134}
   - component: {fileID: 95329518522490250}
-  - component: {fileID: 95329518522490251}
   m_Layer: 0
   m_Name: Wooden Bow
   m_TagString: Untagged
@@ -4969,22 +4953,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &95329518522490251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717406371845898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5f181977f997840af58d71e20b51df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  fireRate: 0
-  fireDistance: 10
-  bulletPoint: {fileID: 627681860}
 --- !u!4 &129201806696501817
 Transform:
   m_ObjectHideFlags: 0
