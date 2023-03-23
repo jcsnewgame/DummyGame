@@ -7,20 +7,21 @@ public class DetectCollisions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider enemy)
     {
-        if(enemy.gameObject.CompareTag("Enemy"))
+        if (enemy.gameObject.CompareTag("Enemy"))
         {
             enemy.GetComponent<HealthController>().ApplyDamage(10);
+            Destroy(gameObject);
         }
     }
 }
