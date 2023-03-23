@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17290446, g: 0.20734291, b: 0.2484332, a: 1}
+  m_IndirectSpecularColor: {r: 0.17295936, g: 0.2074399, b: 0.24864164, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2752,7 +2752,6 @@ GameObject:
   - component: {fileID: 1518651789}
   - component: {fileID: 1518651788}
   - component: {fileID: 1518651787}
-  - component: {fileID: 1518651794}
   - component: {fileID: 1518651793}
   m_Layer: 0
   m_Name: Zombie
@@ -2975,19 +2974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a03076710270c4ab264ea502451678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1518651794
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518651786}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.89, y: 1.9142951, z: 0.5525795}
-  m_Center: {x: -0.00013700171, y: 0.81661516, z: 0.028318558}
 --- !u!1 &1518799451
 GameObject:
   m_ObjectHideFlags: 0
