@@ -10,7 +10,7 @@ public class DetectCollisions : MonoBehaviour
     {
         if (enemy.gameObject.CompareTag("Enemy"))
         {
-            enemy.GetComponent<HealthController>().ApplyDamage(10);
+            enemy.GetComponent<HealthController>().ApplyDamage(100);
             Destroy(gameObject);
             // score.AddScore(100);
         }
