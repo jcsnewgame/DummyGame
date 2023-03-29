@@ -28,6 +28,8 @@ public class HealthController : MonoBehaviour
 
     private bool isDead;
 
+    //public Score score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,7 @@ public class HealthController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            score.AddScore(100);
             currentHealth = 0;
             isDead = true;
             skinnedMeshRenderer.enabled = false;
@@ -78,4 +81,9 @@ public class HealthController : MonoBehaviour
         healthBar.sizeDelta = new Vector2(newWidth, healthBar.sizeDelta.y);
         healthText.text = currentHealth + "/" + maxHealth;
     }
+
+    // void Update()
+    // {
+    //     score.AddScore(100);
+    // }
 }

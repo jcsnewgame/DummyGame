@@ -1027,6 +1027,7 @@ GameObject:
   - component: {fileID: 623743724}
   - component: {fileID: 623743723}
   - component: {fileID: 623743722}
+  - component: {fileID: 623743728}
   - component: {fileID: 623743725}
   - component: {fileID: 623743727}
   m_Layer: 0
@@ -1120,6 +1121,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ArrowPrefab: {fileID: 773319821849069217, guid: 6b8ba88b583febf49ac9385226b88421, type: 3}
   ArrowSpawnPosition: {fileID: 627681860}
+--- !u!114 &623743728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623743721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477211007837929419799a3e82c34243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 1726576673}
 --- !u!1 &627681859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,6 +2891,7 @@ MonoBehaviour:
   healthText: {fileID: 370886420}
   maxHealth: 100
   respawnTime: 5
+  score: {fileID: 1726576675}
 --- !u!137 &1518651789
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -3060,7 +3075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a03076710270c4ab264ea502451678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 1726576675}
 --- !u!1 &1518799451
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,12 +3447,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726576671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 477211007837929419799a3e82c34243, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1726576673}
+  ScoreText: {fileID: 1726576673}
 --- !u!1 &1763720674
 GameObject:
   m_ObjectHideFlags: 0
