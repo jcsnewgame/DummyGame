@@ -47,7 +47,6 @@ public class HealthController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            score.AddScore(100);
             currentHealth = 0;
             isDead = true;
             skinnedMeshRenderer.enabled = false;
