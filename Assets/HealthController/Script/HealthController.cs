@@ -47,14 +47,23 @@ public class HealthController : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            //score.AddScore(100);
             currentHealth = 0;
             isDead = true;
+            Destroy(gameObject);
             skinnedMeshRenderer.enabled = false;
             healthPanel.SetActive(false);
-            StartCoroutine(RespawnAfterTime());
+
         }
 
         UpdateHealthUI();
+    }
+    private void OnTriggerEnter(Collider enemy)
+    {
+        if (enemy.gameObject.CompareTag("Enemy"))
+        {
+            enemy.GetComponent<HealthController>().ApplyDamage(100);
+        }
     }
 
     IEnumerator RespawnAfterTime()
