@@ -38,6 +38,14 @@ public class HealthController : MonoBehaviour
         UpdateHealthUI();
     }
 
+    private void PlayerScore(GameObject player)
+    {
+        if (player.gameObject.CompareTag("Player"))
+        {
+            player.GetComponent<Scoring>().AddScore(1);
+        }
+    }
+
     public void ApplyDamage(float damage)
     {
         if (isDead) return;
@@ -52,9 +60,11 @@ public class HealthController : MonoBehaviour
             {
                 enemyAsset[i].SetActive(false);
             }
-            healthPanel.SetActive(false);
-            StartCoroutine(RespawnAfterTime());
-            score.AddScore(1);
+            // healthPanel.SetActive(false);
+            Destroy(gameObject);
+            // StartCoroutine(RespawnAfterTime());
+            // score.AddScore(1);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Scoring>().AddScore(1);
         }
 
         UpdateHealthUI();
