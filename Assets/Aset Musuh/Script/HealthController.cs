@@ -28,6 +28,8 @@ public class HealthController : MonoBehaviour
 
     private bool isDead;
 
+    public Scoring score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +54,7 @@ public class HealthController : MonoBehaviour
             }
             healthPanel.SetActive(false);
             StartCoroutine(RespawnAfterTime());
+            score.AddScore(1);
         }
 
         UpdateHealthUI();
