@@ -28,22 +28,12 @@ public class HealthController : MonoBehaviour
 
     private bool isDead;
 
-    public Scoring score;
-
     // Start is called before the first frame update
     void Start()
     {
         healthBarStartWidth = healthBar.sizeDelta.x;
         ResetHealth();
         UpdateHealthUI();
-    }
-
-    private void PlayerScore(GameObject player)
-    {
-        if (player.gameObject.CompareTag("Player"))
-        {
-            player.GetComponent<Scoring>().AddScore(1);
-        }
     }
 
     public void ApplyDamage(float damage)

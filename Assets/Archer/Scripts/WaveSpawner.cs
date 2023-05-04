@@ -73,7 +73,7 @@ public class WaveSpawner : MonoBehaviour
             Debug.Log("Completed All Waves! Looping...");
         }
 
-        nextWave++;
+        // nextWave++;
     }
 
     bool EnemyIsAlive()
