@@ -574,6 +574,10 @@ MonoBehaviour:
     enemy: {fileID: 6583044139393663342, guid: b7821bc68399b8d408e2ca218c29c3de, type: 3}
     count: 1
     rate: 1
+  - name: Siam
+    enemy: {fileID: 6583044139393663342, guid: b7821bc68399b8d408e2ca218c29c3de, type: 3}
+    count: 2
+    rate: 1
   timeBetweenWaves: 5
   waveCountdown: 0
   state: 2
