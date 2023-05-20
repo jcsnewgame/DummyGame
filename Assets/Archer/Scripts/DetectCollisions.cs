@@ -27,5 +27,10 @@ public class DetectCollisions : MonoBehaviour
             enemy.GetComponent<HealthController>().ApplyDamage(damageValue);
             Destroy(gameObject);
         }
+
+        // if (enemy.gameObject.CompareTag("DestroyArrow"))
+        // {
+        //     Destroy(gameObject);
+        // }
     }
 }
