@@ -1358,6 +1358,7 @@ GameObject:
   - component: {fileID: 5769246812354812881}
   - component: {fileID: 5769246812354812886}
   - component: {fileID: 5769246812354812887}
+  - component: {fileID: 1118661279340907004}
   m_Layer: 0
   m_Name: Siam
   m_TagString: Enemy
@@ -1438,7 +1439,6 @@ MonoBehaviour:
   - {fileID: 1992094370022327698}
   maxHealth: 100
   respawnTime: 3
-  score: {fileID: 0}
 --- !u!114 &5769246812354812886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1464,8 +1464,26 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.2291603, y: 5.487985, z: 1}
-  m_Center: {x: -0.06391984, y: 2.6365235, z: 0}
+  m_Size: {x: 2.472661, y: 5.487985, z: 1.7748156}
+  m_Center: {x: -0.023752846, y: 2.6365235, z: 0.38740793}
+--- !u!143 &1118661279340907004
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769246812354812884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 5.1
+  m_Radius: 1
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 2.61, z: 0}
 --- !u!1 &6040472954286340239
 GameObject:
   m_ObjectHideFlags: 0
