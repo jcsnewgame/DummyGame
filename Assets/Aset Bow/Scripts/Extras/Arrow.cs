@@ -114,6 +114,7 @@ namespace BNG {
 
             // Don't Count Triggers
             if(collision.collider.isTrigger) {
+                Destroy(gameObject);
                 return;
             }
 

@@ -509,7 +509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0575fbe986d63a1418892ce8064541d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!1 &1027712472469027654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,6 +1358,7 @@ GameObject:
   - component: {fileID: 5769246812354812886}
   - component: {fileID: 5769246812354812887}
   - component: {fileID: 1118661279340907004}
+  - component: {fileID: 7019237574104030013}
   m_Layer: 0
   m_Name: Siam
   m_TagString: Enemy
@@ -1477,13 +1477,26 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 5.1
-  m_Radius: 1
+  m_Height: 5.46
+  m_Radius: 0.69
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 2.61, z: 0}
+  m_Center: {x: 0, y: 2.61, z: 0.41}
+--- !u!135 &7019237574104030013
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769246812354812884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 20, z: 0}
 --- !u!1 &6040472954286340239
 GameObject:
   m_ObjectHideFlags: 0

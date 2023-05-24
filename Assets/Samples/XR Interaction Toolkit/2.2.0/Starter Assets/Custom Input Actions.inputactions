@@ -1,0 +1,34 @@
+{
+    "name": "Custom Input Actions",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "91e60ff2-2b5e-495c-a699-fdac89414054",
+            "actions": [
+                {
+                    "name": "MenuPressed",
+                    "type": "Button",
+                    "id": "891021e0-1321-497e-8043-057d4de508ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "03e0ac75-a721-44aa-92e3-705bba58b810",
+                    "path": "<ViveController>/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

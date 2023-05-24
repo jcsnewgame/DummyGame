@@ -54,7 +54,7 @@ public class HealthController : MonoBehaviour
             Destroy(gameObject);
             // StartCoroutine(RespawnAfterTime());
             // score.AddScore(1);
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Scoring>().AddScore(1);
+            // GameObject.FindGameObjectWithTag("Player").GetComponent<Scoring>().AddScore(1);
         }
 
         UpdateHealthUI();

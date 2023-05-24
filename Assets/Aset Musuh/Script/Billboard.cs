@@ -13,7 +13,7 @@ public class Billboard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject target = GameObject.Find("CameraRig");
+        GameObject target = GameObject.Find("CenterEyeAnchor");
         transform.LookAt(target.transform);
     }
 }

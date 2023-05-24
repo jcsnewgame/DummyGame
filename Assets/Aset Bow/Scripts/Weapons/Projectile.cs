@@ -12,7 +12,7 @@ namespace BNG {
 
         public GameObject HitFXPrefab;
         private bool _checkRaycast;
-        public float Damage = 25;
+        public float Damage = 10;
 
         /// <summary>
         /// Add force to rigidbody on impact
@@ -38,6 +38,7 @@ namespace BNG {
         public virtual void OnCollisionEvent(Collision collision) {
             // Ignore Triggers
             if (collision.collider.isTrigger) {
+                Destroy(gameObject);
                 return;
             }
 
